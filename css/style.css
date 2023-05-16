@@ -25,10 +25,23 @@ header{
     padding: 4vh 5vw;
 }
 
-header button{
+header .btn-dropdown{
     background-color: transparent;
     border: none;
     font-size: 1.4rem;
+}
+
+.header-controls{
+    display: none;
+}
+
+.header-controls .btn{
+    background-color: transparent;
+    border: none;
+    padding: 7px 0;
+    width: 6.2rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
 }
 
 .logo{
@@ -125,4 +138,32 @@ footer .follow{
 
 .copyright{
     font-size: 0.8rem;
+}
+
+@media screen and (min-width: 750px) {
+    .header-controls{
+        display: flex;
+        gap: 3vh;
+    }
+    .header-controls .btn-register{
+        background-color: var(--color-principal);
+        color: white;
+        box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.144);
+    }
+    
+    .header-controls .btn-login{
+        border: solid 1px #BDBDBD;
+
+    }
+    
+    header .btn-dropdown{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    body{
+        background-color: aqua;
+    }
 }
